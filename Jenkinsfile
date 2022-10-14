@@ -25,8 +25,8 @@ pipeline {
         always {
           junit 'test-reports/results.xml'
         }
-       
       }
+     }
     }
      stage ('Clean') {
        agent{label 'awsDeploy'}
