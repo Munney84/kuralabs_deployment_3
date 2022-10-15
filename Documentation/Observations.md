@@ -15,3 +15,16 @@
 6. $sudo systemctl start jenkins **
 7. $sudo apt install python3
 8. $sudo apt install python3-venv
+
+## 2. Create an EC2 in Public Subnet of a Custom VPC
+### 1. Create VPC
+1. On AWS go to VPC section and create VPC (select VPC only on next page)
+2. Label your VPC in the name tag section
+3. Adjust IPv4 CIDR as needed (172.25.0.0/16)
+4. Accept default settings number of public and private subnets, NAT gateway and VPC endpoints
+5. Click Create VPC
+6. Click Subnets and create subnet using the VPC ID you created
+7. Enter subnet name and select availalability zone of choice
+8. Create subnet
+
+### 2. Create EC2 for 
