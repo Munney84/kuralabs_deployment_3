@@ -2,5 +2,7 @@
 
 # Deploying to a customized VPC from a default VPC
 ## 1. Install Jenkins on an EC2
-### Create Amazon EC2 with Ubuntu image
-
+### 1. Create Amazon EC2 with Ubuntu image
+select Key pair **
+under network settings create a security group or use an existing group and set ports
+launch instance
