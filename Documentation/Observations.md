@@ -27,4 +27,4 @@
 7. Enter subnet name and select availalability zone of choice
 8. Create subnet
 
-### 2. Create EC2 for 
+### 2. Create EC2 for Custom VPC
