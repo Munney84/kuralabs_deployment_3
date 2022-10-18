@@ -43,7 +43,8 @@
 1. Prior to your build, SSH into the EC2 that has the Jenkins agent
 2. Nano into "/etc/nginx/sites-enabled/default” file with sudo priviledges
 3. Change the listening server from 80 to 5000
-4. Change "location" to the following: 
+4. Change "location" to the following: <img width="524" alt="Screen Shot 2022-10-18 at 9 51 54 AM" src="https://user-images.githubusercontent.com/108026310/196449145-f42ca8bb-f70f-436a-968d-3f4f5be0389f.png">
+
  proxy_pass http://127.0.0.1:8000;
  proxy_set_header Host $host;
  proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
