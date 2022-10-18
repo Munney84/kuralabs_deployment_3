@@ -53,6 +53,12 @@
 
 6. While logged into Jenkins, create a multibranch pipeline and connect it to your Github repo
 
+## Additions to the pipeline (Slack Notificiations)
+1. Add Slack Notification plugin to Jenkins (Navigate to "manage jenkins" and then "Manage plugins" to search for slack plugin
+2. Configure the Jenkins integration using: https://my.slack.com/services/new/jenkins-ci choose the channel of choice to receive notifications
+3. Save the "Integration Token Credential ID" as it is needed to when creating credentials 
+4. Configure system to add Slack workspace "kura-labs" and add secret text credential using the "Integration Token Credential ID" from the above step. User ID can be found in the slack profile (copy starting with "U" 
+
 ## Issues
 1. Host name in Node Config should be the Public IP of your EC2 located in the custom VPC’s public subnet
 2. Must nano into nginx file with sudo proviledges to save edits
