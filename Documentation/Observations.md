@@ -42,9 +42,11 @@
 ## 4. Create a Pipeline build in Jenkins
 1. Prior to your build, SSH into the EC2 that has the Jenkins agent
 2. Nano into "/etc/nginx/sites-enabled/default” file with sudo priviledges
-3. Change the listening server from 80 to 5000 <img width="397" alt="Screen Shot 2022-10-18 at 9 59 52 AM" src="https://user-images.githubusercontent.com/108026310/196451256-1d7e0fbb-2ebd-4f25-bab5-e7b6cd867234.png">
+3. Change the listening server from 80 to 5000 
+<img width="593" alt="Screen Shot 2022-10-18 at 10 15 15 AM" src="https://user-images.githubusercontent.com/108026310/196455795-e705482d-d5da-4921-bf14-2e5bb2db88ab.png">
 
-4. Change "location" to the following: <img width="524" alt="Screen Shot 2022-10-18 at 9 51 54 AM" src="https://user-images.githubusercontent.com/108026310/196449145-f42ca8bb-f70f-436a-968d-3f4f5be0389f.png">
+4. Change "location" to the following: 
+<img width="735" alt="Screen Shot 2022-10-18 at 10 15 48 AM" src="https://user-images.githubusercontent.com/108026310/196455913-77ac791a-ab32-4525-a854-d45104e1319c.png">
 
 5. Edit the Jenkinsfile in the github repository to match the following:
 <img width="969" alt="Screen Shot 2022-10-18 at 10 11 30 AM" src="https://user-images.githubusercontent.com/108026310/196455026-48c49446-6be5-4e36-92ec-127b88f4aa77.png">
