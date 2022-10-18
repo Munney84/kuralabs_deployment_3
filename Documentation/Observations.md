@@ -28,3 +28,22 @@
 8. Create subnet
 
 ### 2. Create EC2 for Custom VPC
+1. See "Create Amazon EC2 with Ubuntu image" steps above
+2. Install the following packages: default-jre, python3-pip, python3.10-venv, nginx
+
+## 3. Configure and connect Jenkins agent to Jenkins
+1. Log into Jenkins using the IP address from your defaut VPC and port 8080
+2. Select "Build Executor Status"
+3. Select "New Node" and enter a node name (ex: awsDeploy) and choose "Permanent Agent" option
+4. Configure Node to preferences (Usage = "only build with label", Launch Method = "launch agents via ssh", Host key verification strategy = "non verification strategy”, Availability = keep this agent online as much as possible)
+5. Under "Launch Methods" select "Launch agents via SSH", and input public IP of the jenkins agent as the "Host"
+6. Add Jenkins credentials and under "Kind" use "SSH Username with private key"
+
+## 4. Create a Pipeline build in Jenkins
+1. Prior to your build, SSH into the EC2 that has the Jenkins agent
+2. Nano into "/etc/nginx/sites-enabled/default” file with sudo priviledges
+3. Change the listening server from 80 to 5000
+4. Change "location" to the following: 
+ proxy_pass http://127.0.0.1:8000;
+ proxy_set_header Host $host;
+ proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
