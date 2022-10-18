@@ -47,4 +47,5 @@
 4. Change "location" to the following: <img width="524" alt="Screen Shot 2022-10-18 at 9 51 54 AM" src="https://user-images.githubusercontent.com/108026310/196449145-f42ca8bb-f70f-436a-968d-3f4f5be0389f.png">
 
 5. Edit the Jenkinsfile in the github repository to match the following:
+<img width="969" alt="Screen Shot 2022-10-18 at 10 11 30 AM" src="https://user-images.githubusercontent.com/108026310/196455026-48c49446-6be5-4e36-92ec-127b88f4aa77.png">
 
