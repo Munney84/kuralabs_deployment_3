@@ -51,4 +51,11 @@
 5. Edit the Jenkinsfile in the github repository to match the following:
 <img width="969" alt="Screen Shot 2022-10-18 at 10 11 30 AM" src="https://user-images.githubusercontent.com/108026310/196455026-48c49446-6be5-4e36-92ec-127b88f4aa77.png">
 
-6. While logged into Jenkins, create a muktibranch pipeline and connect to your Github repo
+6. While logged into Jenkins, create a multibranch pipeline and connect it to your Github repo
+
+## Issues
+1. Host name in Node Config should be the Public IP of your EC2 located in the custom VPC’s public subnet
+2. Must nano into nginx file with sudo proviledges to save edits
+3. Jenkins plugin “Pipeline Keep Running Step” needed in order for the url to the flask app can open as it would close after the build
+4. Restart nginx after edits for applied changes to take effect "$ sudo systemctl restart nginx"
+5. Jenkins plugin “Pipeline Keep Running Step” needs to be downloaded in order for the url to the flask app can open as it would close after the build.
