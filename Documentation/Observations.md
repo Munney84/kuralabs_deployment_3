@@ -51,3 +51,4 @@
 5. Edit the Jenkinsfile in the github repository to match the following:
 <img width="969" alt="Screen Shot 2022-10-18 at 10 11 30 AM" src="https://user-images.githubusercontent.com/108026310/196455026-48c49446-6be5-4e36-92ec-127b88f4aa77.png">
 
+6. While logged into Jenkins, create a muktibranch pipeline and connect to your Github repo
